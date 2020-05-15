@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cross Share</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.2.0/tailwind.min.css'><link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+  <div id="preloader">
+        <div id="loader">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+  
+  <div class="fab"> <img src="dark.png" onclick="myFunction()"> </div>
+<!-- partial:index.partial.html -->
+<div class="flex flex-wrap">
+    <div class="w-full sm:w-8/12 mb-10">
+      <div class="container mx-auto h-full sm:p-10">
+        <nav class="flex px-4 justify-between items-center">
+           <!-- <img src="crossshareround.png"  height="200" width="200" > -->
+        </nav>
+        
+          <div class="w-full">
+            <h1 class="text-4xl lg:text-6xl font-bold">Cross<span class="text-red-700">Share</span></h1>
+            <div class="w-20 h-2 bg-red-700 my-4"></div>
+            
+              <h2 id="logHeading" style="display: none"></h2><div class="speed"></div><div class="log"></div><h2>Start seeding</h2>
+
+        <input type="file" class="custom-file-input text-2xl font-medium " name="upload" style="width: 90px"  multiple>
+  <h2>Start downloading</h2>
+  <form>
+    <label for="torrentId">Download from a magnet link or info hash</label>
+    <input name="torrentId" placeholder="magnet:" required class="txtbx">
+      <button class="bg-red-500 text-white text-2xl font-medium px-4 py-2 rounded shadow" type="submit">Download</button>
+  </form>
+
+            
+          </div>
+        </header>
+      </div>
+    </div>
+    <img src="images/side.png" alt="Leafs" class="sticky mobimg w-full h-48 object-cover sm:h-screen sm:w-4/12">
+  </div>
+
+<!-- partial -->
+<script src="script/backend.js"></script>
+
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+   
+}
+</script>
+
+  <script>window.ga = window.ga || function () {
+  (ga.q = ga.q || []).push(arguments)
+}
+ga.l = +new Date
+ga('create', 'UA-3898076-18', 'auto')
+ga('send', 'pageview')</script><script async src="//www.google-analytics.com/analytics.js"></script>
+  <script  src="script/script.js"></script>
+
+
+  <script>function myFunction() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+}
+</script>
+
+
+</body>
+</html>
